@@ -59,5 +59,10 @@ jwt:
   expiration: 604800 #JWT的超期限时间(因为一般是七天免登录，所以这里是：60*60*24*7)
   tokenHead: 'lijie-' #JWT负载中拿到开头
 
+mongodb:
+  host: localhost # mongodb的连接地址
+  port: 27017 # mongodb的连接端口号
+  database: shopping-database # mongodb的连接的数据库
+
 
 
