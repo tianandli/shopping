@@ -1,3 +1,5 @@
+server:
+  port: 8081
 
 spring:
   datasource:
@@ -64,5 +66,12 @@ mongodb:
   port: 27017 # mongodb的连接端口号
   database: shopping-database # mongodb的连接的数据库
 
+rabbitmq:
+  host: localhost # rabbitmq的连接地址
+  port: 5672 # rabbitmq的连接端口号
+  virtual-host: /shopping # rabbitmq的虚拟host，我们自己在界面上配置了一个虚拟host
+  username: shopping # rabbitmq的用户名，我们自己在界面上创建了一个shopping用户
+  password: shopping # rabbitmq的密码
+  publisher-confirms: true #如果对异步消息需要回调必须设置为true
 
 
